@@ -1,15 +1,15 @@
 .product-container{
     margin-top: 1rem;
     display: flex;    
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas */
+    flex-wrap: wrap; 
     align-items: center;
-    justify-content: center; /* Centra los elementos horizontalmente */
+    justify-content: center; 
 }
 
 .product-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Espaciado entre los productos */
+    gap: 20px; 
 }
 
 .containerTitle{
