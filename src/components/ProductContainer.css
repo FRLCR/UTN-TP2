@@ -1,0 +1,17 @@
+.product-container{
+    margin-top: 1rem;
+    display: flex;    
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas */
+    align-items: center;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaciado entre los productos */
+}
+
+.containerTitle{
+    font-size: 2rem;
+}
