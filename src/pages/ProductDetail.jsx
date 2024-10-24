@@ -19,11 +19,11 @@ function ProductDetail() {
             })
             .then(data => {
                 setProduct(data);
-                setLoading(false);
+                setLoading(!loading);
             })
             .catch(err => {
                 setError(err.message);
-                setLoading(false);
+                setLoading(!loading);
             });
     }, []); 
 

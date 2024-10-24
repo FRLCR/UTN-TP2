@@ -11,7 +11,6 @@ function Navbar(){
                     <NavLink to="/" exact activeClassName="active">Home</NavLink>
                     <NavLink to="/login" activeClassName="active">Iniciar Sesión</NavLink>
                     <NavLink to="/register" activeClassName="active">Registrarse</NavLink>
-                    <NavLink to="/pizza" activeClassName="active">Pizza</NavLink>
                 </div>
             </nav>
         </header>

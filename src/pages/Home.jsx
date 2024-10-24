@@ -17,11 +17,11 @@ useEffect(() => {
         })
         .then(data => {
             setProducts(data);
-            setLoading(false);
+            setLoading(!loading);
         })
         .catch(err => {
             setError(err.message);
-            setLoading(false);
+            setLoading(!loading);
         });
 }, []);
 
