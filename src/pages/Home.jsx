@@ -8,6 +8,7 @@ function Home() {
     const [error, setError] = useState(null);
 
 useEffect(() => {
+    setLoading(true)
     fetch('https://fakestoreapi.com/products')
         .then(response => {
             if (!response.ok) {
@@ -17,11 +18,11 @@ useEffect(() => {
         })
         .then(data => {
             setProducts(data);
-            setLoading(!loading);
+            setLoading(false);
         })
         .catch(err => {
             setError(err.message);
-            setLoading(!loading);
+            setLoading(false);
         });
 }, []);
 
