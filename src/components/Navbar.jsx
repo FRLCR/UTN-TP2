@@ -8,9 +8,9 @@ function Navbar(){
             <nav className="navbar">
                 <div className="logo">UTN TP2</div>
                 <div className="nav-links">
-                    <NavLink to="/" exact activeClassName="active">Home</NavLink>
-                    <NavLink to="/login" activeClassName="active">Iniciar Sesión</NavLink>
-                    <NavLink to="/register" activeClassName="active">Registrarse</NavLink>
+                    <NavLink to="/"  className={({ isActive }) => (isActive ? "active" : undefined)}>Home</NavLink>
+                    <NavLink to="/login"  className={({ isActive }) => (isActive ? "active" : undefined)}>Iniciar Sesión</NavLink>
+                    <NavLink to="/register"  className={({ isActive }) => (isActive ? "active" : undefined)}>Registrarse</NavLink>
                 </div>
             </nav>
         </header>
